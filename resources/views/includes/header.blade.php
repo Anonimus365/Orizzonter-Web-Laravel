@@ -3,7 +3,7 @@
             <nav class="flex justify-between items-center w-[92%]  mx-auto">
                 <!-- Logo y nombe-->
                 <div class="flex items-center gap-2">
-                    <img class="h-9 w-9 border-none rounded-full cursor-pointer" src="/dist/images/Subtítulo.png" alt="...">
+                    <img class="h-9 w-9 border-none rounded-full cursor-pointer" src="{{ asset('images/subtitulo.png') }}" alt="...">
                     <p class="text-[22px] font-bold">Orizzonter</p>
                 </div>
 
