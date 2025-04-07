@@ -14,6 +14,6 @@
             </div>
             <div class="flex justify-center items-center">
                 <img  alt="Logo"
-                    class="rounded-full h-[470px] w-[470px] shadow-[0px_0px_30px_rgba(255,255,255,0.8)] transition-all duration-300 hover:scale-105 hover:shadow-[0px_0px_50px_rgba(255,255,255,1)]" src="{{ asset('images/logoHeader.png') }}">
+                    class="roñunded-full h-[470px] w-[470px] shadow-[0px_0px_30px_rgba(255,255,255,0.8)] transition-all duration-300 hover:scale-105 hover:shadow-[0px_0px_50px_rgba(255,255,255,1)]" src="{{ asset('images/logoHeader.png') }}">
             </div>
         </section>
