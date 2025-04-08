@@ -1,4 +1,4 @@
-<header class="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md shadow-md py-4 z-10">
+<header class="containerHeader fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md shadow-md py-4 z-10">
             <!-- Barra de navegacion -->
             <nav class="flex justify-between items-center w-[92%]  mx-auto">
                 <!-- Logo y nombe-->
@@ -27,7 +27,7 @@
                 </div>
                 <!-- Sing in -->
                 <div class="flex items-center gap-6">
-                    <a href="login.html">
+                    <a href="{{ route('login') }}">
                         <button class="relative px-6 py-2 text-white font-semibold bg-purple-700 rounded-full shadow-md transition-all duration-300 ease-in-out 
                         hover:bg-purple-900 hover:shadow-lg hover:-translate-y-1 
                         active:scale-95 overflow-hidden">
