@@ -12,6 +12,63 @@ class User extends Authenticatable
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }
+
+    public function configuration()
+    {
+        return $this->hasOne(Configuration::class);
+    }
+
+    public function personalization()
+    {
+        return $this->hasOne(Personalization::class);
+    }
+
+    public function statistics()
+    {
+        return $this->hasOne(Statistic::class);
+    }
+
+    public function challenges()
+    {
+        return $this->belongsToMany(Challenge::class, 'user_challenges')
+                    ->withPivot('progress', 'status', 'completed_at')
+                    ->withTimestamps();
+    }
+
+    public function chats()
+    {
+        return $this->hasMany(Chat::class);
+    }
+
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
+
+    public function communities()
+    {
+        return $this->hasMany(Community::class);
+    }
+
+    public function groups()
+    {
+        return $this->belongsToMany(Group::class)->withPivot('role', 'joined_at')->withTimestamps();
+    }
+
+    public function savedRoutes()
+    {
+        return $this->hasMany(SavedRoute::class);
+    }
+
+    public function announcements()
+    {
+        return $this->hasMany(Announcement::class, 'moderator_id');
+    }
+
     /**
      * The attributes that are mass assignable.
      *

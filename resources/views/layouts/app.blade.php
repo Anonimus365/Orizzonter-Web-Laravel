@@ -6,7 +6,7 @@
     <title>@yield('title', 'Orizzonter')</title>
     <link rel="stylesheet" href="{{ asset('styles.css') }}">
     <link rel="stylesheet" href="{{ asset('index.css') }}">
-
+    
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
