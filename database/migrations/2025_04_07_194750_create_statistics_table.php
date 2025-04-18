@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('statistics', function (Blueprint $table) {
             $table->id();
 
-            $table->integer('total_rides')->default(0);
+            $table->unsignedInteger('total_rides')->default(0);
             $table->decimal('total_distance', 8, 2)->default(0.00);
-            $table->integer('total_time')->default(0);
+            $table->unsignedInteger('total_time')->default(0);
             $table->decimal('calories_burned', 8, 2)->default(0.00);
             $table->decimal('average_speed', 5, 2)->default(0.00);
             

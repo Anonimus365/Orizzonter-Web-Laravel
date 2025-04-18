@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('announcements', function (Blueprint $table) {
             $table->id();
 
-            $table->string('title');
+            $table->string('title', 100);
             $table->text('content');
-            $table->string('category');
+            $table->string('category', 50);
             $table->string('image_url')->nullable();
 
             $table->unsignedBigInteger('moderator_id');

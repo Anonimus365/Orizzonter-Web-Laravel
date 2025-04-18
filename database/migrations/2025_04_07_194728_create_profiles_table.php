@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
 
-            $table->string('gender')->nullable();
+            $table->string('gender', 10)->nullable();
             $table->string('profile_ph')->nullable();
             $table->text('description')->nullable();
-            $table->string('nickname')->unique();
-            $table->string('cyclist_type');
+            $table->string('nickname', 50)->unique();
+            $table->string('cyclist_type', 30);
             $table->json('social_media')->nullable();
             $table->integer('busy_routes')->default(0);
             $table->text('achievements')->nullable();

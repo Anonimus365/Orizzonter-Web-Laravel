@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('interest_places', function (Blueprint $table) {
             $table->id();
 
-            $table->string('description');
-            $table->string('name');
-            $table->string('place_type');
-            $table->string('location');
+            $table->text('description');
+            $table->string('name', 100);
+            $table->string('place_type', 50);
+            $table->string('location', 150);
 
             $table->timestamps();
         });

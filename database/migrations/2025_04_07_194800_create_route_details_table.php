@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->enum('difficulty', ['easy', 'medium', 'hard']);
-            $table->string('terrain_type');
+            $table->string('terrain_type', 50);
             $table->integer('duration');
             $table->decimal('distance', 8, 2);
         

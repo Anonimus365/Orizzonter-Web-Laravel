@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('personalizations', function (Blueprint $table) {
             $table->id();
 
-            $table->string('theme')->default('light');
+            $table->string('theme', 20)->default('light');
             $table->json('preferences')->nullable();
-            $table->string('language')->default('en');
+            $table->string('language', 10)->default('en');
 
             $table->unsignedBigInteger('profile_id')->nullable();
             $table->foreign('profile_id')->references('id')->on('profiles')->onDelete('set null');

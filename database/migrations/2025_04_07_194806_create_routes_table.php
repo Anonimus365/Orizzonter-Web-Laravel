@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('routes', function (Blueprint $table) {
             $table->id();
 
-            $table->string('name');
+            $table->string('name', 150);
             $table->integer('ranked')->default(0);
             $table->date('creation_date');
             $table->text('description')->nullable();
