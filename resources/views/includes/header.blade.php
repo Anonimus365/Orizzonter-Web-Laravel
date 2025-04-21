@@ -23,6 +23,10 @@
                         hover:text-purple-600 
                         after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-purple-500 
                         after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href="#Services">Servicios</a></li>
+                        <li><a class="relative p-2 text-lg text-gray-700 cursor-pointer transition duration-300 ease-in-out 
+                        hover:text-purple-600 
+                        after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-purple-500 
+                        after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href=" {{route('formularios')}} ">Formularios</a></li>
                     </ul>
                 </div>
                 <!-- Sing in -->
