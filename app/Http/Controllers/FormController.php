@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class FormController extends Controller
 {
     public function index(){
-        return view('home2');
+        return view('home2')->with('form', 'user');
     }
 }

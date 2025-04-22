@@ -3,9 +3,9 @@
         <div class="flex justify-around">
             <nav class="flex flex-col gap-4">
                 <h6 class="footer-title text-2xl font-bold">Integrantes</h6>
-                <a class="link link-hover">Gabriel Chilito</a>
-                <a class="link link-hover">Juan Potosí</a>
                 <a class="link link-hover">Dan Muñoz</a>
+                <a class="link link-hover">Juan Potosí</a>
+                <a class="link link-hover">Gabriel Chilito</a>
               </nav>
               <nav class="flex flex-col gap-4">
                 <h6 class="footer-title text-2xl font-bold">Integrantes</h6>

@@ -9,4 +9,7 @@ class UserController extends Controller
     public function create(){
         return view('users.create');
     }
+    public function store(){
+        return "procesando form";
+    }
 }
