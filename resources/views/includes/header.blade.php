@@ -3,8 +3,8 @@
             <nav class="flex justify-between items-center w-[92%]  mx-auto">
                 <!-- Logo y nombe-->
                 <div class="flex items-center gap-2">
-                    <img class="h-9 w-9 border-none rounded-full cursor-pointer" src="{{ asset('images/subtitulo.png') }}" alt="...">
-                    <p class="text-[22px] font-bold">Orizzonter</p>
+                    <a href="{{route('home')}}"><img class="h-9 w-9 border-none rounded-full cursor-pointer" src="{{ asset('images/subtitulo.png') }}" alt="..."></a>
+                    <a href="{{route('home')}}"><p class="text-[22px] font-bold">Orizzonter</p></a>
                 </div>
 
                 <!-- Menu de navegacion -->
@@ -15,8 +15,8 @@
                         hover:text-purple-600 
                             after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-purple-500 
                         after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href="#main">Inicio</a></li>
-                        <li><a class="relative p-2 text-lg text-gray-700 cursor-pointer transition duration-300 ease-in-out 
-                        hover:text-purple-600 
+                        <li><a class="relative p-2 text-lg text-gray-700 cursor-pointer transition duration-300 ease-in-out
+                        hover:text-purple-600
                         after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-purple-500 
                         after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href="#afterHeader">Caracterísitcas</a></li>
                         <li><a class="relative p-2 text-lg text-gray-700 cursor-pointer transition duration-300 ease-in-out 

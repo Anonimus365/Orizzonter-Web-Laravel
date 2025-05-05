@@ -10,11 +10,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/formularios', [FormController::class, 'index'])->name('formularios'); 
+Route::get('/formularios/{form?}', [FormController::class, 'index'])->name('formularios'); 
 
-// Route::get('/formularios/users', [UserController::class, 'create'])->name('users.create');
 Route::post('/formularios/users', [UserController::class, 'store'])->name('users.store');
 
 Route::post('/profiles', [ProfileController::class, 'store'])->name('profiles.store');
