@@ -10,6 +10,8 @@
 <div id="containerHeader" class="flex flex-col h-screen">
         @include('includes.header')
 
+        @include('includes.selector-form')
+
         <div class="py-20">
             @yield('content')
         </div>

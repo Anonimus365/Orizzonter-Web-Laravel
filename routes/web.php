@@ -15,10 +15,10 @@ Route::get('/', function () {
 Route::get('/formularios', [FormController::class, 'index'])->name('formularios'); 
 Route::get('/formularios/{form?}', [FormController::class, 'index'])->name('formularios'); 
 
-Route::post('/formularios/users', [UserController::class, 'store'])->name('users.store');
-
-Route::post('/profiles', [ProfileController::class, 'store'])->name('profiles.store');
-
-Route::post('/statistics', [StatisticController::class, 'store'])->name('statistics.store');
-
 Route::get('/login', [LoginController::class, 'login'])->name('login');
+
+
+// Rutas para formularios
+
+
+Route::resource('users', UserController::class);

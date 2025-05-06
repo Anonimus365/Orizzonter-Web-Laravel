@@ -4,7 +4,7 @@
 
     <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-3">
         <!-- Card: Usuario -->
-        <a href="{{ route('formularios', 'user') }}" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 text-center">
+        <a href="{{ route('users.create') }}" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 text-center">
             <div class="text-orange-500 mb-3 text-4xl">
                 👤
             </div>
