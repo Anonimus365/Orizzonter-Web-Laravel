@@ -20,5 +20,6 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 
 // Rutas para formularios
 
-
 Route::resource('users', UserController::class);
+
+Route::resource('statistics', StatisticController::class);

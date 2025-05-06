@@ -22,7 +22,7 @@
         </a>
 
         <!-- Card: Estadísticas -->
-        <a href="{{ route('formularios', 'statistics') }}" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 text-center">
+        <a href="{{ route('statistics.index') }}" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 border border-gray-200 text-center">
             <div class="text-orange-500 mb-3 text-4xl">
                 📊
             </div>

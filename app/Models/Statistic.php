@@ -18,4 +18,9 @@ class Statistic extends Model
     {
         return $this->hasMany(RouteDetail::class);
     }
+
+    protected $fillable = [
+    
+    ];
 }
+
