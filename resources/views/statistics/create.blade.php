@@ -23,6 +23,11 @@
             <select id="user_id" name="user_id" required
                 class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
                 <option value="">Seleccione un usuario</option>
+                @foreach ($users as $user) <!-- Aquí iteramos sobre los usuarios -->
+                    <option value="{{ $user->id }}" {{ old('user_id') == $user->id ? 'selected' : '' }}>
+                        {{ $user->name }} <!-- Aquí se muestra el nombre del usuario -->
+                    </option>
+                @endforeach
             </select>
         </div>
 

@@ -19,8 +19,16 @@ class Statistic extends Model
         return $this->hasMany(RouteDetail::class);
     }
 
-    protected $fillable = [
-    
-    ];
+   
+
+protected $fillable = [
+    'user_id',
+    'total_rides',
+    'total_distance',
+    'total_time',
+    'calories_burned',
+    'average_speed',
+];
+
 }
 
